@@ -1,0 +1,84 @@
+﻿@import "Mixins";
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url("1293590797.jpg") no-repeat 10% 20%;
+
+}
+
+header {
+    #navbar {
+        .navbar_div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 80px;
+            position: fixed;
+            background: rgba(0, 0, 0, 0.40);
+
+
+            .div_items {
+                padding: 0.4% 0;
+                width: 12%;
+                text-align: center;
+                margin-left: 1%;
+                margin-right: 1%;
+
+                &:hover {
+                    background: #efb000;
+                    transition: 0.3s ease-in-out;
+                }
+
+                a {
+                    height: 50px;
+                    text-align: center;
+                    color: white;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+
+                    &:hover {
+                        color: black;
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+
+                .num1, .num2, .num3, .num4, .num5 {
+                    position: fixed;
+                }
+            }
+        }
+    }
+    /*Mixins*/
+
+    .Blur_box, .Blur_box_1, .Blur_box_2 {
+        @include box;
+
+        p {
+            @include para_1;
+        }
+
+        .para {
+            @include para_2;
+        }
+    }
+
+    .Blur_box_1 {
+        left: 40%;
+    }
+
+    .Blur_box_2 {
+        left: 70%;
+    }
+
+    .Blur_box::after, .Blur_box_1::after, .Blur_box_2::after {
+        @include pseudo;
+    }
+}
+
+/*First section*/
+

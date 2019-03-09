@@ -1,0 +1,42 @@
+@mixin box {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 450px;
+    height: 200px;
+    box-shadow: 1px 4px 25px 5px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    color: black;
+    font-size: 120%;
+    border-bottom: 2px black solid;
+}
+
+@mixin para_1 {
+    color: white;
+    font-size: 4rem;
+    font-family: Rockwell;
+    z-index: 2;
+    position: absolute;
+    top: -65px;
+    left: 16px;
+    letter-spacing: 4px;
+}
+
+@mixin para_2 {
+    font-size: 1.6rem;
+    font-family: 'Arial Rounded MT';
+    top: 85px;
+    font-weight: 550;
+    line-height: 40px;
+}
+
+@mixin pseudo {
+    content: '';
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    background: url("1293590797.jpg") 100% 90% fixed;
+    filter: blur(3px);
+}

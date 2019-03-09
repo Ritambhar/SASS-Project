@@ -1,0 +1,94 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: url("1293590797.jpg") no-repeat 10% 20%; }
+
+header {
+  /*Mixins*/ }
+  header #navbar .navbar_div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4); }
+    header #navbar .navbar_div .div_items {
+      padding: 0.4% 0;
+      width: 12%;
+      text-align: center;
+      margin-left: 1%;
+      margin-right: 1%; }
+      header #navbar .navbar_div .div_items:hover {
+        background: #efb000;
+        -webkit-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+      header #navbar .navbar_div .div_items a {
+        height: 50px;
+        text-align: center;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 600; }
+        header #navbar .navbar_div .div_items a:hover {
+          color: black;
+          -webkit-transition: 0.3s ease-in-out;
+          -o-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out; }
+      header #navbar .navbar_div .div_items .num1, header #navbar .navbar_div .div_items .num2, header #navbar .navbar_div .div_items .num3, header #navbar .navbar_div .div_items .num4, header #navbar .navbar_div .div_items .num5 {
+        position: fixed; }
+  header .Blur_box, header .Blur_box_1, header .Blur_box_2 {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 450px;
+    height: 200px;
+    -webkit-box-shadow: 1px 4px 25px 5px black;
+    box-shadow: 1px 4px 25px 5px black;
+    overflow: hidden;
+    color: black;
+    font-size: 120%;
+    border-bottom: 2px black solid; }
+    header .Blur_box p, header .Blur_box_1 p, header .Blur_box_2 p {
+      color: white;
+      font-size: 4rem;
+      font-family: Rockwell;
+      z-index: 2;
+      position: absolute;
+      top: -65px;
+      left: 16px;
+      letter-spacing: 4px; }
+    header .Blur_box .para, header .Blur_box_1 .para, header .Blur_box_2 .para {
+      font-size: 1.6rem;
+      font-family: 'Arial Rounded MT';
+      top: 85px;
+      font-weight: 550;
+      line-height: 40px; }
+  header .Blur_box_1 {
+    left: 40%; }
+  header .Blur_box_2 {
+    left: 70%; }
+  header .Blur_box::after, header .Blur_box_1::after, header .Blur_box_2::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    background: url("1293590797.jpg") 100% 90% fixed;
+    -webkit-filter: blur(3px);
+    filter: blur(3px); }
+
+/*First section*/
